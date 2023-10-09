@@ -1,0 +1,30 @@
+<div mat-dialog-title class="title">
+    <h2>{{data? 'Edit employee': 'Add new employee'}}</h2>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput maxlength="200" type="text" placeholder="input name" formControlName="name">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Dept</mat-label>
+                <input matInput maxlength="500" type="text" placeholder="input dept" formControlName="dept">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Age</mat-label>
+                <input matInput maxlength="4" type="text" (keypress)="keyPress($event)" placeholder="input age" formControlName="age">
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button color="primary" type="submit">{{data? 'Update': 'Save'}}</button>
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+    </div>
+</form>
+

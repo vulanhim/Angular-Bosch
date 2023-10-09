@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "name": "Le Quoc Vu",
+      "dept": "EET32",
+      "age": "24",
+      "id": 1
+    },
+    {
+      "name": "Vuong Minh Nhat",
+      "dept": "EET32",
+      "age": "24",
+      "id": 2
+    },
+    {
+      "name": "Nguyen Ngoc Lam Bao Truong",
+      "dept": "EET32",
+      "age": "26",
+      "id": 3
+    },
+    {
+      "name": "Nguyen Hoang Duy",
+      "dept": "EET33",
+      "age": "23",
+      "id": 4
+    },
+    {
+      "name": "Nguyen Minh An",
+      "dept": "EET33",
+      "age": "22",
+      "id": 5
+    },
+    {
+      "name": "Le Nguyen Thanh Danh",
+      "dept": "EET31",
+      "age": "24",
+      "id": 6
+    }
+  ]
+}
